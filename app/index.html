@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
-    <script defer src="app.js"></script>
+    <!-- <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script> -->
+    <script
+      src="https://cdn.socket.io/4.2.0/socket.io.min.js"
+      integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app/app.js"></script>
   </head>
   <body>
     <ul></ul>
 
     <input placeholder="message" />
-    <button>Send</button>
+    <button id="btn-send" onclick="sendMessage()">Send</button>
+    <!-- <button id="btn-send">Send</button> -->
   </body>
 </html>
